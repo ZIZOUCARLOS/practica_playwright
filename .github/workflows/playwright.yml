@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: 4. Instalar navegadores de Playwright y dependencias del SO
-        run: npx playwright install --with-deps chromium firefox
+        run: npx playwright install --with-deps chromium
 
       - name: 5. Ejecutar suite de pruebas E2E
         run: npx playwright test
